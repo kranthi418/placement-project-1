@@ -1,0 +1,8 @@
+AWS_S3_BUCKET_NAME="wafer_fault"
+MONGO_DATABASE_NAME="venkat"
+MONGO_COLLECTION_NAME="Waferfault"
+TARGET_COLUMN="quality"
+MONGO_DB_URL="mongodb+srv://kranthi:NwtPxSWouijDe4hp@cluster0.dqik7.mongodb.net/?appName=Cluster0"
+MODEL_FILE_NAME="Model"
+MODEL_FILE_EXTENSION=".pkl"
+artifact_folder="artifacts"
