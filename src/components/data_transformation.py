@@ -32,15 +32,16 @@ class DataTransformation:
         self.utils = MainUtils()
 
     @staticmethod
-    def get_data(feature_store_file_path: str) ->pd.DataFrame:
-
+    def get_data(feature_store_file_path: str) -> pd.DataFrame:
         try:
+            print("FEATURE STORE PATH =", feature_store_file_path)   # <-- ADD THIS LINE
 
             data = pd.read_csv(feature_store_file_path)
 
             data.rename(columns={"Good/Bad": TARGET_COLUMN}, inplace=True)
 
             return data
+
         except Exception as e:
             raise CustomException(e,sys)
         
